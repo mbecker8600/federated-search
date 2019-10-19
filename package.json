@@ -1,0 +1,12 @@
+{
+  "name": "UnifiedQueryServicePOC",
+  "version": "1.0.0",
+  "dependencies": {
+    "msnodesqlv8": "latest",
+    "express": "latest",
+    "mssql": "latest",
+    "graphql": "latest",
+    "@apollo/gateway": "latest",
+    "apollo-server": "latest"
+  }
+}
