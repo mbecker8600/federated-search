@@ -16,7 +16,6 @@
     "apollo-link-http": "latest",
     "apollo-server": "latest",
     "concurrently": "^5.0.0",
-    "express": "latest",
     "graphql": "latest",
     "msnodesqlv8": "latest",
     "mssql": "latest",
