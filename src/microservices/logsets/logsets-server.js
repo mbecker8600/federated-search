@@ -18,6 +18,10 @@ const typeDefs = gql`
     log_set_item_id: Int!
     logset: Logset
     log_guid: String
+    log: Log 
+  }
+  extend type Log @key(fields: "log_guid"){
+    log_guid: String! @external
   }
 `;
 
@@ -30,6 +34,9 @@ const resolvers = {
     },
     LogsetItem: {
         logset: (_, { log_set_id }) => getLogset(log_set_id),
+        log(logsetItem) {
+            return { __typename: "Log", log_guid: logsetItem.log_guid };
+        }
     }
 };
 
